@@ -1,0 +1,127 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(10, 1, 1);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(252, 247, 247);
+    text-align: left;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 10px;
+    text-align: left;
+   padding-top: 10px;
+   text-align: left;
+}
+.content h1 span{
+    background-color: black;
+    font-family: 'Lobster', cursive;
+}
+.sub{
+    display: none;
+}
+.navbar ul li:hover .sub{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background: #009688;
+}
+.navbar ul li:hover .sub ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub ul li{
+    width: 150px;
+    padding: 20px;
+    border-bottom: 1px dotted #009688;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navbar ul li:hover .sub ul li a:hover{
+    color: #c7f3e8;
+}
+.bookNow:hover::after{
+     width: 100%;
+}
+body{
+    background:#FAD2C8;
+}
+.slider-box{
+    width:90%;
+    height: 90vh;
+    margin : 30px auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.9s;
+}
+#slider img{
+    width: 100%;
+}
+.indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.indicators span{
+ display: inline-block;   
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background: rgba(255,255,255,0.5);
+}

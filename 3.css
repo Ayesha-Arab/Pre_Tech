@@ -1,0 +1,51 @@
+.parent{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 1px;
+}
+#hoverimage{
+    transition:transform .5s;
+}
+#hoverimage:hover{
+    transform:scale(1.5);
+}
+.container{
+    position:relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+    
+}
+.image1{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin-left: 250px;
+    margin-right: 450px;
+    
+}
+.img-text{
+    margin-left: 350px;
+}
+.img-textt{
+    margin-left: 250px;
+}
+.img{
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin-right: 450px;
+    margin-left: 100px;
+    
+    
+}
+p{
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+h1{
+    font-family: 'Lobster', cursive;
+}

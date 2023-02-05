@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .navbar ul li a{
+            text-decoration: none;
+            color: rgb(10, 1, 1);
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: rgb(252, 247, 247);
+            text-align: left;
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top: 10px;
+            text-align: left;
+           padding-top: 10px;
+           text-align: left;
+        }
+        .content h1 span{
+            background-color: black;
+            font-family: 'Lobster', cursive;
+        }
+        .sub{
+            display: none;
+        }
+        .navbar ul li:hover .sub{
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: -15px;
+            background: #009688;
+        }
+        .navbar ul li:hover .sub ul{
+            display: block;
+            margin: 10px;
+        }
+        .navbar ul li:hover .sub ul li{
+            width: 150px;
+            padding: 20px;
+            border-bottom: 1px dotted #009688;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        .navbar ul li:hover .sub ul li a:hover{
+            color: #c7f3e8;
+        }
+        .bookNow:hover::after{
+             width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+           <big><b><big>!Feminis</big><small>s</small></b></big>
+           <ul>
+            <li><a href="1.html">Home</a></li>
+            <li><a href="#">Services</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="2_1.html">House Maid</a></li>
+                        <li><a href="2_2.html">Cook/Chef</a></li>
+                        <li><a href="2_3.html">All Rounder</a></li>
+                        <li><a href="2_4.html">Baby Caretaker</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="3.html">Pricing</a></li>
+            <li><a href="4.html">About Us</a></li>
+            <li><a href="5.html">Contact Us</a></li>
+            <li><a href="6.html"><button style="
+            border-radius: 20px;
+            background-color: #009688;"><pre style=" font-size: 20px;
+            font-family: 'Lobster', cursive;"> login </pre></button></a></li>
+          </ul><br><br>
+        </div>
+
+        <h3 style=" font-size: 40px;margin-left: 150px;
+        font-family: 'Lobster', cursive;"><br>All Rounder<br><br></h3>
+
+        <p style="color: rgb(44, 37, 37);font-size: 30px;margin-left: 150px;">Trained and professional full-day workers.<br>Feel free to customize your booking!
+        </p>
+
+        <video src="2_3.mp4" class="vdo" controls loop style="margin-left: 900px
+        ;margin-top: 0.01%;height: 30%;width: 30%;border: black solid 7px;"></video>
+
+        
+        
+            <div class="bookNow">
+            <a href="7.html" >
+                <button style="border-radius: 20px;background-color: #009688;margin-left: 150px;">
+                <pre style=" font-family: 'Lobster', cursive;height: 30px; font-size: 20px;">  BOOK NOW  </pre>
+            </button>
+            </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
